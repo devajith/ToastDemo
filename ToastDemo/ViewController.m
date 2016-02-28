@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "Toast.h"
 
 @interface ViewController ()
 
@@ -22,6 +23,12 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+- (IBAction)show:(id)sender {
+    
+    [Toast showToastWithMessage:@"Hi Buddy, I'm Toast I will disappear soon..." forDuration:3];
 }
 
 @end
